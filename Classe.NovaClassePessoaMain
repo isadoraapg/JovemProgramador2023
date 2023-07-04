@@ -1,0 +1,16 @@
+package aula.classes;
+
+public class NovaClassePessoaMain {
+
+	public static void main(String[] args) {
+		
+		NovaClassePessoa p1 = new NovaClassePessoa();
+		p1.setNome("Diego");
+		p1.setIdade(55);
+		
+		System.out.println( "Meu nome é " + p1.getNome() );
+		System.out.println( "Tenho " + p1.getIdade() + " anos de idade" );
+		
+	}
+
+}
