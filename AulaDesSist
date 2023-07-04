@@ -1,0 +1,70 @@
+package teste;
+import java.util.Scanner;
+public class Aulas {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		// Cria um objeto da classe 'Scanner' para podermos ler do teclado
+		// Este objeto necessita que façamos a importação do 'java.util.Scanner'
+//		Scanner leitorDoTeclado = new Scanner(System.in);
+		
+		// Como iremos ler a idade e o nome da pessoa, criaremos variáveis para
+		// armazenar esses valores.
+//		String nome; // variavel que armazena o nome da pessoa
+//		String idade; // variavel que armazena a idade da pessoa, note que optamos por armazenar a idade em formato 'String'
+		
+		// Digitar nome: exibiremos uma mensagem na tela para indicarmos ao usuario o que ele deve digitar o seu nome
+//		System.out.println("Digite o seu nome:"); // println é método que exibe uma determinada String na tela
+		
+		// Aqui utilizaremos o leito do teclado para que o usuário entre com as informações
+//		nome = leitorDoTeclado.nextLine(); // Aqui esperamos que o usário digite alguma coisa no terminal
+		
+		// Digitar idade: exibiremos uma mensagem na tela para indicarmos ao usuario que ele digitar a sua idade
+//		System.out.println("Digite a sua idade:"); // println é método que exibe uma determinada String na tela
+//		idade = leitorDoTeclado.nextLine();
+		
+		// Exibe mensagem com os dados digitados
+//		System.out.println("Nome: " + nome); 
+		
+		// Exibe mensagem com os dados digitados
+//		System.out.println("Idade: " + idade);
+		
+		
+		// Fecha leitor do teclado
+//		leitorDoTeclado.close();
+		
+		
+//-------------------------------------------------------------------------------
+		
+		
+		
+//		double a = 4;
+//		double b = 5;
+//		double resultado;
+		
+//		resultado = a + b;
+//		System.out.println("O Resultado de " + a + " + " + b + " = " + resultado );
+		
+		
+//		resultado = a - b;
+//		System.out.println("O Resultado de " + a + " - " + b + " = " + resultado );
+		
+		 
+//		resultado = a * b;
+//		System.out.println("O Resultado de " + a + " * " + b + " = " + resultado );
+		
+		// Divisão
+//		resultado = a / b;
+//		System.out.println("O Resultado de " + a + " / " + b + " = " + resultado );
+		
+		// Raiz quadrada
+//		resultado = Math.sqrt(a);
+//		System.out.println("O Resultado da raiz quadrada de " + a + " é " + resultado );
+		
+		// Potencia = valor 'a' elevado ao valor 2
+//		resultado = Math.pow(a, 2);
+//		System.out.println("O Resultado de " + a + " ^ " + 2 + " = " + resultado );
+		
+		
+//----------------------------------------------------------------------------------
