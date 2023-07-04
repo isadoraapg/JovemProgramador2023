@@ -1,0 +1,21 @@
+package aulas;
+import java.util.Arrays;
+
+public class OperacoesBasicas {
+
+	public static void main(String[] args) {
+		
+		// Copiando um array
+		int[] numeros = { 1, 2, 3 };
+		int[] copiaNumeros = Arrays.copyOf(numeros, numeros.length);
+
+		// Ordenando um array
+		String[] nomes = { "João", "Maria", "Pedro" };
+		Arrays.sort(nomes);
+
+		// Preenchendo um array com valores específicos
+		int[] numeros_2 = new int[5];
+		Arrays.fill(numeros, 0);
+	}
+
+}
