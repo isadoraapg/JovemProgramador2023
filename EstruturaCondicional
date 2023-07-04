@@ -1,0 +1,165 @@
+public class EstruturaCondicionaExemplo01 {
+
+	public static void main(String[] args) {
+
+		// nota média de um aluno
+		double media = 7;
+		
+		if( (media >= 6) ) {
+			System.out.printf("Sua média foi %.2f: você foi APROVADO!", media );			
+		}
+      }
+}
+
+
+
+
+
+public class EstruturaCondicionaExemplo02 {
+
+	public static void main(String[] args) {
+
+		// nota média de um aluno
+		double media = 5;
+		
+		if( (media >= 6) ) {
+			System.out.printf("Sua média foi %.2f: você foi APROVADO!", media );			
+		}
+		else { // Nunca possição uma condição para ser verificada
+			System.out.printf("Sua média foi %.2f: você foi REPROVADO!", media );
+		}
+	}
+}
+
+
+
+
+
+
+public class EstruturaCondicionaExemplo03 {
+
+	public static void main(String[] args) {
+
+		// nota média de um aluno
+		double media = 5;
+		
+		if( (media >= 6) && (media < 7) ) {
+			System.out.printf("Sua média foi %.2f: você foi APROVADO! Conceito: REGULAR", media );			
+		}
+		else if( (media >= 7) && (media < 8) ) {
+			System.out.printf("Sua média foi %.2f: você foi APROVADO! Conceito: BOM", media );
+		}
+		else if( (media >= 8)  ) {
+			System.out.printf("Sua média foi %.2f: você foi APROVADO! Conceito: EXCELENTE", media );
+		}
+		else { // Nunca possiu condição para ser verificada
+			System.out.printf("Sua média foi %.2f: você foi REPROVADO!", media );
+		}
+	}
+}
+
+
+
+
+
+
+
+package aulas;
+
+public class EstruturaCondicionaExemplo02 {
+
+	public static void main(String[] args) {
+
+		// opcao em um menu
+		int opcao = 1;
+		
+		switch( opcao ) {
+		
+		case 1:
+			System.out.println("Opção 1 escolhida.");
+		break;
+		
+		case 2:
+			System.out.println("Opção 2 escolhida.");
+		break;
+			
+		case 3:
+			System.out.println("Opção 3 escolhida.");
+		break;
+		
+		default:
+			System.out.println("Opção inválida");
+		}
+	}
+}
+
+
+
+
+
+
+
+package aulas;
+
+public class EstruturaCondicionaExemplo02 {
+
+	public static void main(String[] args) {
+
+		// opcao em um menu
+		String marcaDeCarro = "Hyundai";
+		
+		switch( marcaDeCarro ) {
+		
+		case "Hyundai":
+			System.out.println("Opção Hyundai escolhida.");
+		break;
+		
+		case "Chevrolet":
+			System.out.println("Opção Chevrolet escolhida.");
+		break;
+			
+		case "Fiat":
+			System.out.println("Opção Fiat escolhida.");
+		break;
+		
+		default:
+			System.out.println("Fabricante não encontrada.");
+		}
+		
+	}
+}
+
+
+
+
+
+
+package aulas;
+
+public class EstruturaCondicionaExemplo02 {
+
+	public static void main(String[] args) {
+
+		// opcao em um menu
+		String marcaDeCarro = "Hyundai";
+		
+		switch( marcaDeCarro.toLowerCase() ) {
+		
+		case "hyundai":
+			System.out.println("Opção Hyundai escolhida.");
+		break;
+		
+		case "chevrolet":
+			System.out.println("Opção Chevrolet escolhida.");
+		break;
+			
+		case "fiat":
+			System.out.println("Opção Fiat escolhida.");
+		break;
+		
+		default:
+			System.out.println("Fabricante não encontrada.");
+		}
+		
+	}
+}
