@@ -1,0 +1,260 @@
+package teste;
+import java.util.Scanner;
+
+public class JavaTeste {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		
+			//imprimir uma mensagem:
+//     System.out.println("Olá, Mundo!");
+		
+		
+			//pedir informações ao usuário:
+//		String nome;
+//		System.out.println("Digite seu nome: ");
+		
+			//ler informações:
+//		Scanner leitor = new Scanner(System.in);
+		
+			//armazenar na variável 'nome':
+//		nome = leitor.next();
+		
+			//exibir informação recebida:
+//		System.out.println("O nome digitado foi: " + nome);
+		
+			//para idade usar 'int'
+//		int idade;
+//		System.out.println("Digite sua idade: ");
+//		idade = leitor.nextInt();
+		
+			//transformar em letras maiúsculas:
+//		System.out.println(nome.toUpperCase());
+		
+			//transformar em letras minúsculas:
+//		System.out.println(nome.toLowerCase());
+		
+		
+		
+		
+		
+			//double é também para números com vírgulas:
+//		double a = 5;
+//		double b = 4;
+//		double c = 2;
+//		double resultado;
+			
+			
+			//soma:
+//		resultado = a + b;
+//		System.out.println("O resultado de a + b é: " + resultado);
+			
+			//ou podemos usar a sentença:
+//		System.out.println("O resultado de " + a + " + " + b + " é igual a: " + resultado);
+			
+			//subtração:
+//		resultado = a - b;
+//		System.out.println("O resultado de " + a + " - " + b + " é igual a: " + resultado);
+			
+			//multiplicação:
+//		resultado = a * b;
+//		System.out.println("O resultado de " + a + " x " + b + " é igual a " + resultado);
+			
+			//divisão:
+//		resultado = a / b;
+//		System.out.println("O resultado de " + a + " / " + b + " é igual a " + resultado);
+			
+			//raiz quadrada:
+			//utilizar Math.sqrt()
+//		resultado = Math.sqrt(b);
+//		System.out.println("A raiz quadrada de " + b + " é igual a " + resultado);
+			
+			//para calcular o 'ao quadrado':
+			//utilizar Math.pow()
+//		resultado = Math.pow(b, c);
+//		System.out.println("O valor de " + b + " elevado a " + c + " é igual a " + resultado);
+			
+
+		
+		
+			//System.out.printf ()  --->  f é 'formatação'
+			//muda a forma de sinalização do resultado
+			// %n ---> faz a quebra de linha
+			// %s ---> faz a leitura da 'string'
+			// %f ---> indica que no local deve inserir algo
+			// %.3f ---> quantidade de casas após a virgula (pode ser %.1f, %.2f, etc.
+		
+//		Scanner leitor = new Scanner (System.in);
+//		int a;
+//		double b;
+//		double resultado;
+//		String nomeAutomovel = "Palio";
+		
+//		System.out.println("Qual a distância percorrida em km? ");
+//		a = leitor.nextInt();
+		
+//		System.out.println("Qual o gasto de combustível em L? ");
+//		b = leitor.nextDouble();
+		
+//		resultado = a / b;
+//		System.out.printf("O consumo médio do automóvel %s é de: %.3f Km/L", nomeAutomovel, resultado);
+		
+	
+			//if ---> 'se'
+			//&& ---> 'e'
+//		double media = 5;
+//		if((media >=6) && (media <7)) {
+//		System.out.printf("Sua média foi %.2f. Você foi aprovado.", media);
+//		}
+		
+			//else if ---> 'senão se'
+//		else if ((media >=8) && (media <=10)) {
+//			System.out.printf("Sua média foi %.2f. Você foi aprovado.", media);
+//		}
+		
+			//else ---> 'se não'
+//		else {
+//			System.out.printf("Sua média foi %.2f. Você foi reprovado.", media);
+//		}
+		
+		
+		
+		
+			//for (inicio; fim; incremento){
+			//for é utilizado para repetições de comando
+//		int valor;
+//		Scanner leitor = new Scanner (System.in);
+//		System.out.println("Digite o valor da tabuada: ");
+//		valor = leitor.nextInt();
+			//i++ ---> i = i + 1
+//		for (int i = 1; i <= 10; i++) {
+//		System.out.println(valor + " x " + i + " = " + (valor*i));
+//		}
+		
+			//for com texto
+			//no caso abaixo, a frase se repetirá 5x (colocamos um número acima, no caso 6)
+//		for (int i = 1; i < 6; i++) {
+//			System.out.println("Olá, Mundo!");
+//		}
+		
+		
+		
+		
+			//while 
+//		int cc = 0;
+//		while (cc<4) {
+//			System.out.println("Hello!");
+//			cc++;
+			
+//		}
+		
+		
+		//while para mostrar o numero de 'hello' - ex: Hello! 1
+//		int cc = 0;
+//		while (cc<4) {
+//			System.out.println("Hello! " + (cc+1));
+//			cc++;
+			
+//		}		
+		
+		
+		
+		//mudar o fluxo de um laço - nesse caso, nao vai aparecer o 5 nem o 7
+		//continue
+//		int cc = 0;
+//		while (cc<10) {
+//			cc++;
+//			if (cc == 5 || cc == 7) {
+//				continue;
+//			}
+//			System.out.println("Hello! " + cc);
+			
+			
+//		}		
+		
+		
+		//break - joga pra fora do laço, interrompe execução
+		//nesse caso, quando chegar ao 7, ele vai dar um break/parar.
+//		int cc = 0;
+//		while (cc<10) {
+//			cc++;
+//			if (cc == 2 || cc == 2 || cc ==4) {
+//				continue;
+//			}
+//			if (cc == 7) {
+//				break;
+//			}
+//			System.out.println("Hello! " + cc);
+			
+			
+//		}			
+		
+		
+		//do while
+//		int cc = 0;
+//		do {
+//		System.out.println("Hello");
+//		cc++;
+//		}while (cc<4);
+		
+		
+		//EXEMPLO
+//		int n, s = 0;
+//		String resp;
+//		Scanner teclado = new Scanner(System.in);
+//		do {
+//			System.out.println("Digite um número: ");
+//			n = teclado.nextInt();
+//			s += n; //s = s + n
+//			System.out.println("Quer continuar? [S/N]");
+//			resp = teclado.next();
+			
+//		}while (resp.equals("S"));
+//		System.out.println("A soma de todo os valores é " + s);
+		
+		
+		
+		//Repetição com Variável de Controle
+		//faz o incremento automaticamente
+		
+		//vai imprimir 4 "hello"
+		//cc começando no 0 e equanto cc <=3
+//		for (int cc=0; cc<=3; cc++) {
+//			System.out.println("hello");	
+//		}
+		
+		//Igual fazer isso:
+		//int cc=0;
+		//while (cc<4) {
+		//System.out.println("Hello");
+		//cc++;
+		//}
+		
+			
+		//se eu quiser pular os numeros de 2 em 2:
+//		for (int cc=5; cc<=15; cc+=2) {
+//			System.out.println(cc);
+//		}
+		
+		
+		
+		//laços aninhados
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	}
+
+}
