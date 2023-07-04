@@ -1,0 +1,38 @@
+package heranca.java;
+
+public class Funcionario extends Pessoa {
+	
+	private String setor;
+	private double salario;
+	
+	public Funcionario( String nome, int idade, String setor, double salario ) {
+		super(nome, idade);
+		this.setor = setor;
+		this.salario = salario;
+	}
+
+	public String getSetor() {
+		return setor;
+	}
+
+	public void setSetor(String setor) {
+		this.setor = setor;
+	}
+
+	public double getSalario() {
+		return salario;
+	}
+
+	public void setSalario(double salario) {
+		this.salario = salario;
+	}
+	
+	@Override
+	public String toString() {
+		String info = "Nome = " + getNome()  + "\n" +
+	                  "Idade: " + getIdade() + "\n" +
+	                  "Setor: " + getSetor() + "\n" + 
+	                  "Setor: " + getSalario() + "\n";
+		return info;
+	}
+}
