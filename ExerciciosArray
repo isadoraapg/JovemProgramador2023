@@ -1,0 +1,226 @@
+ARRAYS
+
+LISTA DE EXERCÍCIOS:
+
+		//EXERCÍCIO 01: Crie um array com os seguintes valores doubles {1.3, 1.4, -5.7, 8.9}. Percorra esse array utilizando for tradicional e o comando for each.		
+
+
+		//		double[] num = {1.3, 1.4, -5.7, 8.9};
+
+
+		//		for( double n: num ) {
+		//			System.out.println(n);
+		//			}
+
+
+		//		for(int i = 0; i < num.length; i++) {
+		//			System.out.println(num[i]);
+
+		//		}
+
+
+
+		//EXERCÍCIO 02: Peça 10 valores inteiros para usuário, armazene-os em um array e imprima-os na tela.
+
+		//		Scanner s = new Scanner(System.in);
+		//		int[] a = new int [10];
+		//		for (int i = 0; i < a.length; i++) {
+		//			System.out.println("Digite o valor da posição " + i + ": ");
+		//		a[i] = s.nextInt();
+
+		//		}
+
+		//		for (int i = 0; i < a.length; i++) {
+		//			System.out.println("O valor de a na posição " + i + " é: " + a[i]);
+		//		}
+
+
+
+		//EXERCÍCIO 03: Peça 10 números inteiros para o usuário e imprima: a quantidade de números positivos, a quantidade de números negativos, a 
+		//quantidade de zeros, a quantidade de números pares e a quantidade de números ímpares.
+
+
+		//		Scanner scanner = new Scanner(System.in);
+		//		int[] numeros = new int[10];
+		//		int positivos = 0;
+		//		int negativos = 0;
+		//		int zeros = 0;
+		//		int pares = 0;
+		//		int impares = 0;
+
+		//		for (int i = 0; i < numeros.length; i++) {
+		//			System.out.println("Digite um número inteiro: ");
+		//			numeros[i] = scanner.nextInt();
+
+
+		//			if (numeros[i] > 0) {
+		//				positivos++;
+
+		//			}
+		//			else if (numeros[i] < 0) {
+		//				negativos++;
+
+		//			}
+		//			else {
+		//				zeros++;
+
+		//			}
+		//			if (numeros [i] %2 == 0) {
+		//				pares++;
+
+		//			}
+		//			else {
+		//				impares++;
+		//			}
+
+		//			 System.out.println("Quantidade de números positivos: " + positivos);
+		//			 System.out.println("Quantidade de números negativos: " + negativos);
+		//			 System.out.println("Quantidade de zeros: " + zeros);
+		//			 System.out.println("Quantidade de pares: " + pares);
+		//			 System.out.println("Quantidade de ímpares: " + impares);
+
+
+		//		}
+
+
+
+
+		//EXERCÍCIO 04: Crie um código utilizando array que peça o nome, idade e a quantidade de filhos para um grupo de cinco pessoas e em seguida 
+		//imprima as informações na tela. O código deve conter um array para armazenar cada uma das informações: nome, idade e quantidade de filhos.
+
+		//		Scanner scanner = new Scanner(System.in);
+		//		String[] nomes = new String[5];
+		//		int[] idades = new int[5];
+		//		int[]filhos = new int [5];
+
+		//		for (int i = 0; i < nomes.length; i++ ) {
+		//			System.out.println("Digite o nome " + (i+1) + ": " );
+		//			nomes[i] = scanner.nextLine();
+
+		//			System.out.println("Digite a idade " + (i+1) + ": ");
+		//			idades[i] = scanner.nextInt();
+
+		//			System.out.println("Quantidade de filhos " + (i+1) + ": ");
+		//			filhos [i] = scanner.nextInt();
+
+		//			scanner.nextLine(); 
+		//		}
+		// \n - pula a linha
+		//		System.out.println("\nInformações: ");
+		//		for (int i = 0; i < nomes.length; i++) {
+		//			System.out.println("\nPessoa " + (i+1));
+		//			System.out.println("Nome: " + nomes[i]);
+		//			System.out.println("Idade: " + idades[i]);
+		//			System.out.println("Filhos: " + filhos[i]);
+		//		}
+		//			scanner.close();
+
+
+
+
+
+		//EXERCÍCIO 05: Escreva um programa em Java que solicite ao usuário a quantidade de nomes que deseja inserir em um array. Em seguida, o programa deve pedir
+		//que o usuário insira os nomes no array e exibir na tela os nomes inseridos. O programa deve encerrar após exibir os nomes.
+
+
+		//		Scanner scanner = new Scanner(System.in);
+
+		//		System.out.println("Quantos nomes deseja inserir?");
+		//		int qntNomes = scanner.nextInt();
+
+		//		String[] nomes = new String[qntNomes];
+
+		//		for (int i = 0; i < nomes.length; i++) {
+		//		System.out.println("Digite o nome " + (i+1) + ": ");
+		//		nomes[i] = scanner.next();
+		//		}
+
+		// \n pula uma linha
+		//		System.out.println("\nNomes inseridos: ");
+		//		for (String nome:nomes) {
+		//			System.out.println(nome);
+		//		}
+		//		scanner.close();
+
+
+
+
+
+		//EXERCÍCIO 06: Crie um programa utilizando array que peça ao usuário que digite 10 números inteiros. Em seguida, o código deve exibir a soma dos números pares
+		//digitados e a média dos números ímpares digitados.
+
+
+//		Scanner scanner = new Scanner(System.in);
+//		int[] numeros = new int [10];
+//		for (int i = 0; i < numeros.length; i++) {
+//			System.out.println("Digite o valor da posição " + i + ": ");
+//			numeros[i] = scanner.nextInt();
+//		}	
+
+//		double somaPares = 0;
+//		double impares = 0;
+//		double somaImpares = 0;
+//		double mediaImpares = 0;
+
+//		for (int i = 0; i < numeros.length; i++) {
+//			if (numeros[i] %2 == 0) {
+				
+//				somaPares = somaPares + numeros[i];
+				//somaPares += numeros[i]
+//			}
+//			else {
+				
+//				impares++;
+//				somaImpares = somaImpares + numeros[i];
+//			}
+//			if (impares > 0) {
+				
+//				mediaImpares = somaImpares/impares;
+//			}
+//		}
+
+//		System.out.println("Soma pares: " + somaPares);
+//		System.out.println("Média ímpares: " + mediaImpares);
+
+//		scanner.close();
+
+
+
+		
+		//EXERCÍCIO 07: Crie um programa que peça o primeiro nome, o cpf e o cpe de N pessoas. O número N pode ser determinado diretamente no programa ou pode ser
+		//também pedido para o usuário. Cada uma dessas informações deve ser armazenada em um array do tipo String. Se o cpf e o cep contiverem '.' ou '-'
+		//deve-se excluí-los. Por fim, deve mostrar as informações recebidas na tela. Utilize a função replaceAll para fazer a remoção dos caracteres indesejados,
+		//abaixo um exemplo ilustrativo do uso dessa função. String cpf = "123.456.789-10"; String cpfSemPontuacao = cpf.replaceAll("[.-]", ""); 
+		//System.out.println(cpfSemPontuacao); // "12345678910
+
+//		Scanner scanner = new Scanner(System.in);
+//		System.out.print("Digite o número de pessoas: ");
+		
+//		int n = scanner.nextInt();
+		
+//		String[] nomes = new String[n];
+//		String[] cpfs = new String[n];
+//		String[] ceps = new String[n];
+		
+//		for (int i = 0; i < n; i++) {
+		
+//		System.out.print("Digite o primeiro nome da pessoa " + (i + 1) + ": ");
+//		nomes[i] = scanner.next();
+		
+//		System.out.print("Digite o CPF da pessoa " + (i + 1) + ": ");
+//		cpfs[i] = scanner.next().replaceAll("[.-]", "");
+		
+//		System.out.print("Digite o CEP da pessoa " + (i + 1) + ": ");
+//		ceps[i] = scanner.next().replaceAll("[.-]", "");
+//		}
+		
+		
+//		System.out.println("\nPessoas cadastradas:");
+		
+//		for (int i = 0; i < n; i++) {
+		
+//		System.out.println("Nome: " + nomes[i]);
+//		System.out.println("CPF: " + cpfs[i]);
+//		System.out.println("CEP: " + ceps[i]);
+				
+//		}
