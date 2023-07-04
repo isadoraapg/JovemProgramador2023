@@ -1,0 +1,1052 @@
+package teste;
+import java.util.Scanner;
+import java.util.Arrays;
+public class Listas_Exercícios {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		
+			//Lista I – Entrada, Processamento e Saıda de Dados		
+			//EXERCÍCIO 01 -  Faca um programa que peca o nome e a idade de uma pessoa e imprima na tela.
+		
+//		Scanner leitorDoTeclado = new Scanner(System.in);
+//		String nome;
+//		String idade;
+//		System.out.println("Digite o seu nome:");
+//		nome = leitorDoTeclado.nextLine();
+//		System.out.println("Digite a sua idade:");
+//		idade = leitorDoTeclado.nextLine();
+//		System.out.println("Nome: " + nome);
+//		System.out.println("Idade: " + idade);
+//		leitorDoTeclado.close();
+		
+			//EXERCÍCIO 02 - faca um programa em Java que pergunta um valor em metros e imprime o correspondente em decımetros, 
+			//centımetros e milımetros.
+		
+//		Scanner leitorDoTeclado = new Scanner (System.in);
+//		double a;
+//		double b;
+//		double c;
+//		double d;
+//		double resultado;
+//		
+//		System.out.println("Digite o valor desejado em metros: ");
+//		a = leitorDoTeclado.nextDouble();
+		
+//		resultado = a*10;
+//		System.out.println("O valor de " + a + " em decímetros equivale a: " + resultado);
+//		resultado = a * 100;
+//		System.out.println("O valor de " + a + " em centímetros equivale a: " + resultado);
+//		resultado = a * 1000;
+//		System.out.println("O valor de " + a + " em milímetros equivale a: " + resultado);
+		
+			//EXERCÍCIO 03 - Fazer um programa em Java que receba como entrada um numero inteiro e imprime a tabuada de 1 a 10 
+			//deste numero.
+		
+//		int valor;
+//		Scanner leitorDoTeclado = new Scanner(System.in);
+//		System.out.println("Digite o valor da tabuada: ");
+//		valor = leitorDoTeclado.nextInt();
+//		for (int i = 1; i <= 10; i++) {
+//			System.out.println(valor + " x " + i + " = " + (valor*i));
+//		}
+		
+			//EXERCÍCIO 04 - Fazer um programa em Java que pergunte um valor em graus Fahrenheit e imprime no vıdeo o
+			//correspondente em graus Celsius usando a formula a seguir: C=[(f - 32) * 5]/9
+		
+//		Scanner leitorDoTeclado = new Scanner (System.in);
+//		double a;
+//		double b = 32;
+//		double c = 5;
+//		double d = 9;
+//		double resultado;
+		
+//		System.out.println("Digite o valor em Fahrenheit: ");
+//		a = leitorDoTeclado.nextDouble();
+//		resultado = ((a-b)*c)/d;
+//		System.out.println("O valor em Celsius correspondente é: " + resultado + "ºC");
+	
+			//EXERCÍCIO 05 - Fazer um programa em Java que tenha como entrada o peso e a altura de uma pessoa e calcule
+			//seu ındice de massa corporal (IMC) segundo a formula abaixo:
+		
+//		Scanner leitorDoTeclado = new Scanner (System.in);
+//		double a;
+//		double b;
+//		double resultado;
+		
+//		System.out.println("Digite o seu peso em kg: ");
+//		a = leitorDoTeclado.nextDouble();
+//		System.out.println("Digite a sua altura em m: ");
+//		b = leitorDoTeclado.nextDouble();
+//		resultado = a/(b*b);
+//		System.out.println("Seu IMC é: " + resultado);
+		
+			//EXERCÍCIO 06 - Calcule o consumo medio de um automovel sendo fornecidos a distancia total percorrida (em Km) 
+			//e o total de combustıvel gasto (em litros).
+			//Entrada: O programa deve pedir ao usuario dois valores: um valor inteiro X representando a distancia total 
+			//percorrida (em Km), e um valor real Y representando o total de combustıvel gasto, com um dıgito apos o ponto decimal.
+			//Saıda: Apresente o valor que representa o consumo medio do automovel com 3 casas apos a vırgula, seguido da mensagem ”km/l”
+		
+//		Scanner leitorDoTeclado = new Scanner (System.in);
+//		int a;
+//		double b;
+//		double resultado;
+		
+//		System.out.println("Qual a distância percorrida em km?");
+//		a = leitorDoTeclado.nextInt();
+//		System.out.println("Qual o gasto de combustível em L?");
+//		b = leitorDoTeclado.nextDouble();
+//		resultado = a/b;
+//		String nomeDoAutomovel = "Pálio";
+//		System.out.println("O consumo médio do automóvel %s é de: %.3f km/L", nomeDoAutomovel, resultado);
+//		%s pega a string nomeDoAutomovel
+//		%f indica que no local deve ser inserido algo, no caso, o resultado
+//  	%.3f o numero indica qnt casas decimais
+		
+			//EXERCÍCIO 07 - Escreva um programa que leia o numero de identificac˜ao de um funcionario, seu numero de horas
+			//trabalhadas, o valor que ele recebe por hora e calcula o salario desse funcionario. O programa deve mostrar na 
+			//tela o numero de identificac˜ao do funcionario e o salario dele, com duas casas decimais.
+			//Entrada O programa deve pedir como entrada: 1) o numero de identificac˜ao do funcionario, 2) a quantidade de horas
+			//trabalhadas e 3) o valor que o funcionario recebe por hora trabalhada.
+			// Saıda: O programa deve imprimir na tela: 1) numero do funcionario e 2) o salario dele.
+		
+//		Scanner leitorDoTeclado = new Scanner (System.in);
+//		String a;
+//		double b;
+//		double c;
+//		double resultado;
+		
+//		System.out.println("Digite o número de identificação: ");
+//		a = leitorDoTeclado.next();
+//		System.out.println("Digite o número de horas trabalhadas: ");
+//		b = leitorDoTeclado.nextDouble();
+//		System.out.println("Digite o valor pago por hora: ");
+//		c = leitorDoTeclado.nextDouble();
+//		resultado = b * c;
+//		System.out.printf("O salário do funcionário %s é de R$%.2f", a, resultado);
+		
+			//EXERCÍCIO 08 - Distancia em linha reta: Para determinar a distancia em linha reta entre dois pontos, faca um programa 
+			//que leia os quatro valores de entrada: x1, y1, x2, y2. Estes valores correspondem a dois pontos quaisquer no plano cartesiano, 
+			//p1(x1,y1) e p2(x2,y2). Em seguida, e calcule a distancia entre esses dois pontos (mostrando 4 casas decimais apos 
+			//a vırgula) seguindo a formula abaixo: D = raiz quadrada(x2 − x1)² + (y2 − y1)². 
+			//Entrada O programa pede do usuario quatro linhas de entrada: as duas primeiras linhas correspondentes aos valores x1 
+			//e y1 (ponto P1), e as duas ultimas linhas correspondem aos valores x2 e y2 (ponto P2). Esses valores devem ser de 
+			//ponto flutuante. Saıda: Calcule e imprima o valor da distancia segundo a formula fornecida, com 4 casas apos o ponto decimal.
+		
+//		Scanner sc = new Scanner(System.in);
+//		System.out.println("Informe o valor de x1:");
+//	    double x1 = sc.nextDouble();
+
+//	    System.out.println("Informe o valor de y1:");
+//	    double y1 = sc.nextDouble();
+
+//	    System.out.println("Informe o valor de x2:");
+//	    double x2 = sc.nextDouble();
+
+//	    System.out.println("Informe o valor de y2:");
+//	    double y2 = sc.nextDouble();
+
+	    // cálculo da distância
+//	    double distancia = Math.sqrt(Math.pow((x2 - x1), 2) + Math.pow((y2 - y1), 2));
+
+	    // impressão do resultado com 4 casas decimais após a vírgula
+//	    System.out.printf("A distância entre os pontos (%.2f, %.2f) e (%.2f, %.2f) é: %.4f", x1, y1, x2, y2, distância);
+
+//	    sc.close();
+		
+			//EXERCÍCIO 09 - Faca um programa que leia o nome de um vendedor, o seu salario fixo e o total de vendas efetuadas por ele 
+			//no mes (em dinheiro). Sabendo que este vendedor ganha 15% de comiss˜ao sobre suas vendas efetuadas, informar o total a 
+			//receber no final do mes, com duas casas decimais.
+			//Entrada: O arquivo de entrada contem um texto (primeiro nome do vendedor) e 2 valores de dupla precis˜ao (double) 
+			//com duas casas decimais, representando o salario fixo do vendedor e montante total das vendas efetuadas por este 
+			//vendedor, respectivamente.
+			//Saıda: Imprima o total que o funcionario devera receber, conforme exemplo fornecido.
+		
+//		Scanner input = new Scanner(System.in);
+//		System.out.print("Digite o nome do vendedor: ");
+//		String nome = input.nextLine();
+
+//		System.out.print("Digite o salário fixo do vendedor: R$");
+//		double salarioFixo = input.nextDouble();
+
+//		System.out.print("Digite o total de vendas do vendedor: R$");
+//		double totalVendas = input.nextDouble();
+
+//		double comissao = totalVendas * 0.15;
+//		double salarioTotal = salarioFixo + comissao;
+
+//		System.out.println("O vendedor " + nome + " irá receber R$" + String.format("%.2f", salarioTotal) + " este mês.");
+		
+//------------------------------------------------------------------------------------------------------------------------
+		
+			//Lista II – Estruturas Condicionais
+			//EXERCÍCIO 01 -  Escreva um programa que receba valor numerico e verifique se este valor é um valor positivo ou
+			//negativo.
+		
+//		double valor;
+//		Scanner leitorDoTeclado = new Scanner (System.in);		
+//		System.out.println("Digite um número: ");
+//		valor = leitorDoTeclado.nextDouble();		
+//		if (valor < 0){
+//			System.out.println("Número negativo");
+//		}
+//		else {
+//			System.out.println("Número positivo");
+//		}
+		
+			//EXERCÍCIO 02 -  Para doar sangue É necessario ter entre 18 e 67 anos. FaÇa um programa que receba do usuario
+			//a sua idade e indique se ele pode doar sangue ou n˜ao.
+		
+//		double valor;
+//		Scanner leitorDoTeclado = new Scanner (System.in);		
+//		System.out.println("Digite sua idade: ");
+//		valor = leitorDoTeclado.nextDouble();		
+//		if ((valor >= 18) && (valor <=67)){
+//			System.out.println("Pode doar");
+//		}
+//		else {
+//			System.out.println("Não pode doar");
+//		}
+
+			//EXERCÍCIO 03 -  Escreva um programa que verifique a validade de uma senha fornecida pelo usuario. A senha
+			//valida É o numero 1234. Devem ser impressas as seguintes mensagens: ACESSO PERMITIDO caso a senha seja váalida. 
+			//ACESSO NEGADO caso a senha seja invalida.
+		
+//		double valor;
+//		Scanner leitorDoTeclado = new Scanner (System.in);
+//		System.out.println("Digite a senha: ");
+//		valor = leitorDoTeclado.nextDouble();
+//		if (valor == 1234) {
+//			System.out.println("ACESSO PERMITIDO");
+//		}
+//		else {
+//			System.out.println("ACESSO NEGADO");
+//		}
+		
+			//EXERCÍCIO 04 - Escreva um programa para ler 2 valores (considere que n˜ao ser˜ao informados valores iguais) e
+			//apresente na tela qual é o maior.
+		
+//		double valor1;
+//		double valor2;
+//		Scanner leitorDoTeclado = new Scanner (System.in);
+		
+//		System.out.println("Digite o valor 1: ");
+//		valor1 = leitorDoTeclado.nextDouble();
+//		System.out.println("Digite o valor 2: ");
+//		valor2 = leitorDoTeclado.nextDouble();
+		
+//		if (valor1 < valor2) {
+//			System.out.println("Valor 2 é o maior.");
+//		}
+//		else {
+//			System.out.println("Valor 1 é o maior.");
+//		}
+		
+			//EXERCÍCIO 05 -  Escreva um programa para ler 2 valores (considere que n˜ao ser˜ao informados valores iguais) e
+			//apresente na tela qual É o maior e qual É o menor.
+		
+//		double valor1;
+//		double valor2;
+//		Scanner leitorDoTeclado = new Scanner (System.in);
+		
+//		System.out.println("Digite o valor 1: ");
+//		valor1 = leitorDoTeclado.nextDouble();
+//		System.out.println("Digite o valor 2: ");
+//		valor2 = leitorDoTeclado.nextDouble();
+		
+//		if (valor1 < valor2) {
+//			System.out.println("Valor 2 é o maior e valor 1 é o menor.");
+//		}
+//		else {
+//			System.out.println("Valor 1 é o maior e valor 2 é o menor.");
+//	}
+		
+			//EXERCÍCIO 06 -  Escreva um programa para ler 2 valores numericos, considere que ser˜ao informados valores iguais,
+			//e apresente na tela qual É o maior ou informe se os valores s˜ao iguais.
+				
+//		double valor1;
+//		double valor2;
+//		Scanner leitorDoTeclado = new Scanner (System.in);
+		
+//		System.out.println("Digite o valor 1: ");
+//		valor1 = leitorDoTeclado.nextDouble();
+//		System.out.println("Digite o valor 2: ");
+//		valor2 = leitorDoTeclado.nextDouble();
+		
+//		if (valor1 < valor2) {
+//			System.out.println("Valor 2 é o maior e valor 1 é o menor.");
+//		}
+//		else if (valor1 > valor2) {
+//			System.out.println("Valor 1 é o maior e valor 2 é o menor.");
+//	}
+//		else {
+//		System.out.println("Valor 1 é igual ao valor 2");
+//		}
+		
+		 	//EXERCÍCIO 07 - No Brasil, entre 16 anos e abaixo de 18 anos o voto é facultativo, a partir dos 18 anos ate os 70
+		 	//anos o voto é obrigatorio, e acima de 70 anos o voto é novamente facultativo. Faca um programa que receba do usuario 
+			//a sua idade e indique se o voto para ele é facultativo ou obrigatorio.
+		
+//		double idade;
+//		double valor2;
+//		Scanner leitorDoTeclado = new Scanner (System.in);
+		
+//		System.out.println("Digite a sua idade: ");
+//		idade = leitorDoTeclado.nextDouble();
+		
+//		if (idade < 16) {
+//			System.out.println("Não pode votar.");
+//		}
+//		else if ((idade >=16) && (idade < 18)) {
+//			System.out.println("Voto facultativo");
+//		}
+//		else if ((idade >=18) && (idade <=70)) {
+//			System.out.println("Voto obrigatório");
+//		}
+//		else if (idade > 70) {
+//			System.out.println("Voto facultativo");
+//		}
+		
+			//EXERCÍCIO 08 - Crie um programa que tenha como entrada o nome e a media final de um aluno e apresente a situac˜ao 
+			//do aluno: 1) ’Reprovado’, 2) ’Aprovado com conceito regular’, 3) ’Aprovado com conceito bom’, ou 4) ’Aprovador 
+			//com conceito excelente’. Para tanto utilize a tabela abaixo: MF < 5 Reprovado || 5 ≤ MF < 7 Aprovado com conceito Regular
+			//7 ≤ MF < 9 Aprovado com conceito Bom || MF ≥ 9 Aprovado com conceito Excelente.
+		
+//		Scanner leitorDoTeclado = new Scanner (System.in);
+//		String nome;
+//		double media;
+		
+//		System.out.println("Digite seu nome: ");
+//		nome = leitorDoTeclado.next();
+//		System.out.println("Digite a Média Final: ");
+//		media = leitorDoTeclado.nextDouble();
+		
+//		if (media < 5) {
+//		System.out.printf("Sua média foi %.2f. Você foi REPROVADO", media);
+//		}
+//		else if ((media >= 5) && (media <7)) {
+//		System.out.printf("Sua média foi %.2f. Você foi APROVADO. Conceito: REGULAR", media);
+//		}
+//		else if ((media >= 7) && (media < 9)) {
+//		System.out.printf("Sua média foi %.2f. Você foi APROVADO. Conceito: BOM", media);
+//		}
+//		else if (media >= 9) {
+//		System.out.printf("Sua média foi %.2f. Você foi APROVADO. Concedito: EXCELENTE", media);
+//		}
+	
+			//EXERCÍCIO 09 -  Modifique o programa anterior para que exiba uma seguinte mensagem “Valor de Media Final
+			//Incorreto!” quando a media final estiver fora da faixa entre 0 e 10.
+		
+//		Scanner leitorDoTeclado = new Scanner (System.in);
+//		String nome;
+//		double media;
+		
+//		System.out.println("Digite seu nome: ");
+//		nome = leitorDoTeclado.next();
+//		System.out.println("Digite a Média Final: ");
+//		media = leitorDoTeclado.nextDouble();
+		
+//		if (media < 5) {
+//		System.out.printf("Sua média foi %.2f. Você foi REPROVADO", media);
+//		}
+//		else if ((media >= 5) && (media <7)) {
+//		System.out.printf("Sua média foi %.2f. Você foi APROVADO. Conceito: REGULAR", media);
+//		}
+//		else if ((media >= 7) && (media < 9)) {
+//		System.out.printf("Sua média foi %.2f. Você foi APROVADO. Conceito: BOM", media);
+//		}
+//		else if (media >= 9) {
+//		System.out.printf("Sua média foi %.2f. Você foi APROVADO. Concedito: EXCELENTE", media);
+//		}
+//		else if ((media < 0) || (media >10)) {
+//		System.out.println("Valor da Média Final Incorreto!");
+//		}
+		
+			//EXERCÍCIO 10 - Escreva um programa que leia o codigo de um determinado produto e mostre a sua classificac˜ao.
+			//Utilize a tabela abaixo como referencia: 1- Alimento n˜ao-perecıvel; 2- Alimento perecıvel; 3- Vestuario; 4- Limpeza. 
+			//Indique para usuario caso a opc˜ao dele seja invalida.
+
+//		Scanner leitorDoTeclado = new Scanner(System.in);			
+//	    System.out.print("Informe o código do produto: ");	    
+//	    int produto = leitorDoTeclado.nextInt();
+
+//	    switch (produto) {
+//	        case 1:
+//	            System.out.println("Classificação: Alimento não perecível");
+//	            break;
+//	        case 2:
+//	            System.out.println("Classificação: Alimento perecível");
+//	            break;
+//	        case 3:
+//	            System.out.println("Classificação: Vestuário");
+//	            break;
+//	        case 4:
+//	            System.out.println("Classificação: Limpeza");
+//	            break;
+//	        default:
+//	            System.out.println("Opção inválida!");
+//	    }
+		
+			//EXERCÍCIO 11 - Uma empresa de pedidos pelo correio vende cinco produtos diferentes cujos preços de varejo s˜ao:
+			//Produto 1: R$2,98 || Produto 2: R$4,50 || Produto 3: R$9,98 || Produto 4: R$4,49 || Produto 5, R$ 6,87. 
+			//Escreva um aplicativo que peça para o usuario : a)Numero do produto: 1, 2, 3, 4, 5 b) Quantidade vendida em um dia. 
+			//O programa deve utilizar uma estrutura switch para ajudar a determinar o preço de varejo de cada produto. Por fim,
+			//o programa deve informar o total em reais do produto vendido.
+	    
+//		  Scanner leitorDoTeclado = new Scanner(System.in);
+//		  int produto;
+//		  double preco;
+
+//		  System.out.print("Digite o número do produto (1 a 5): ");
+//		  produto = leitorDoTeclado.nextInt();
+
+//		  switch (produto) {
+//		     case 1:
+//		        preco = 2.98;
+//		        break;
+//		     case 2:
+//		        preco = 4.50;
+//		        break;
+//		     case 3:
+//		        preco = 9.98;
+//		        break;
+//		     case 4:
+//		        preco = 4.49;
+//		        break;
+//		     case 5:
+//		        preco = 6.87;
+//		        break;
+//		     default:
+//		        System.out.println("Produto inválido.");
+//		        return;
+//		  }
+
+//		  System.out.print("Digite a quantidade vendida em um dia: ");
+//		  double quantidade = leitorDoTeclado.nextDouble();
+
+//		  double total = quantidade * preco;
+//		  System.out.printf("Total em reais do produto vendido: R$ %.2f", total);
+	    
+//---------------------------------------------------------------------------------------------------------------
+		
+			//LISTA III - Estruturas de Repetiç˜ao do Tipo Para “For” e “Do-While”
+			//EXERCÍCIO 01 - UTILIZE DO-WHILE: Construa um menu de opç˜oes para uma calculadora. O menu deve ter
+			//as seguinte opç˜oes: 1) Adiç˜ao, 2) subtraç˜ao, 3) divis˜ao, 4) multiplicaçao, 0) Sair. O programa
+			//deve sair do menu quando o usuário digitar 0. Exemplo do menu: 1)Adiçao 2)Subtraç˜ao 3)Divis˜ao
+		 	//4)Multiplicaçao 0)Sair || Digite o número da operaç˜ao desejada:
+
+//		Scanner leitor = new Scanner(System.in);
+		
+//		System.out.println("CALCULADORA");
+//		System.out.println("1 - ADIÇÃO");
+//	    System.out.println("2 - SUBTRAÇÃO");
+//	    System.out.println("3 - MULTIPLICAÇÃO");
+//	    System.out.println("4 - DIVISÃO");
+//	    System.out.println("0 - SAIR");	    
+//	    int opcao = leitor.nextInt();
+	    
+//	    while ((opcao > 0) && (opcao <= 4)) {
+//		System.out.println("CALCULADORA");
+//		System.out.println("1 - ADIÇÃO");
+//		System.out.println("2 - SUBTRAÇÃO");
+//		System.out.println("3 - MULTIPLICAÇÃO");
+//		System.out.println("4 - DIVISÃO");
+//		System.out.println("0 - SAIR");	
+		
+//		System.out.println("Digite a sua opção: ");
+//		opcao = leitor.nextInt();
+//	    }
+	    	
+			//EXERCÍCIO 02 - UTILIZE DO-WHILE: Um Posto de combustıveis deseja determinar qual de seus produtos tem a
+			//preferencia de seus clientes. Escreva um algoritmo para ler continuamente o tipo de combustıvel abastecido e 
+			//apresenta quantos clientes escolheram cada tipo de combustıvel. O seguinte menu deve ser continuamente apresentado 
+			//ao usuario: Opç˜ao 1 - Alcool; Opçao 2 - Gasolina; Opç˜ao 3 - Diesel; Opç˜ao 4 - Fim. Caso o usuario informe um codigo 
+			//invalido (fora da faixa de 1 a 4) deve ser solicitado um novo codigo (ate que seja valido). O programa sera encerrado 
+			//quando o codigo informado for o numero 4. DICA: Utilize a ideia do menu da quest˜ao anterior.
+			//Entrada: A entrada contem apenas valores inteiros e positivos.
+			//Saıda: Deve ser escrito a mensagem: ”MUITO OBRIGADO” e a quantidade de clientes que abasteceram cada tipo de 
+			//combustıvel, conforme exemplo. 
+		
+//		  Scanner leitor = new Scanner(System.in);		  
+//		  int opcao;
+//		  int alcool = 0;
+//		  int gasolina = 0;
+//		  int diesel = 0;
+		  
+//		  do {
+//		     System.out.println("Opção 1 - Álcool\nOpção 2 - Gasolina\nOpção 3 - Diesel\nOpção 4 - Fim");
+//		     opcao = leitor.nextInt();		     
+//		     while (opcao < 1 || opcao > 4) {
+//		        System.out.println("Opção inválida, informe novamente:");
+//		        opcao = leitor.nextInt();
+//		     }
+		     
+//		     switch (opcao) {
+//		        case 1:
+//		           alcool++;
+//		           break;
+//		        case 2:
+//		           gasolina++;
+//		           break;
+//		        case 3:
+//		           diesel++;
+//		           break;
+//		     }
+		     
+//		  } while (opcao != 4);		  
+//		  System.out.println("MUITO OBRIGADO");
+//		  System.out.println("Álcool: " + alcool);
+//		  System.out.println("Gasolina: " + gasolina);
+//		  System.out.println("Diesel: " + diesel);		  
+//		  leitor.close();
+
+			//EXERCÍCIO 03 - Escreva um programa em Java que receba um número inteiro maior que zero e apresente a tabuada desse número.
+		
+//        Scanner leitor = new Scanner(System.in);
+//        System.out.println("Digite um número inteiro maior que zero: ");
+//        int num = leitor.nextInt();
+
+//       	if (num > 0) {
+//           for (int i = 1; i <= 10; i++) {
+//                System.out.println(num + " x " + i + " = " + (num * i));
+//            }
+//       } else {
+//            System.out.println("O número digitado é inválido!");
+//        }
+
+//        leitor.close();
+		
+			//EXERCÍCIO 04 - Modifique o algoritmo anterior, de maneira que o usuario tamb´em informe o inıcio e o fim da
+			//tabuada. Por exemplo: usuario solicitando a tabuada do numero 6, com inıcio em 5 e fim em 8.
+		
+//		Scanner leitor = new Scanner(System.in);
+
+//        System.out.println("Digite um número inteiro maior que zero: ");
+//        int num = leitor.nextInt();
+
+//        System.out.println("Digite o valor de inicio: ");
+//        int inicio = leitor.nextInt();
+        
+//        System.out.println("Digite o valor de fim: ");
+//        int fim = leitor.nextInt();
+        
+//        if (num > 0) {
+//            for (int i = inicio; i <= fim; i++) {
+//                System.out.println(num + " x " + i + " = " + (num * i));
+//            }
+//        } else {
+//            System.out.println("O número digitado é inválido!");
+//        }
+
+//        leitor.close();
+		
+			//EXERCÍCIO 05 - Crie um programa que imprima 11 vezes a frase ”Hello World!”.
+
+//		Scanner leitor = new Scanner (System.in);
+//		for (int i = 1; i <=11; i++) {
+//			System.out.println("Hello World!");	
+//		}
+		
+			//EXERCÍCIO 06 -  Crie um programa que receba um valor de entrada ”n” e imprima a media dos valores de 1 ate n.
+		
+//		Scanner leitor = new Scanner(System.in);
+//		System.out.println("Digite um valor: ");
+//		int valor = leitor.nextInt();	
+//	    double media = calcularMedia (valor);
+//	    System.out.println("A média dos valores de 1 até " + valor + " é " + media);
+//	  }
+
+//	  public static double calcularMedia(int valor) {
+//		    int soma = 0;
+//		    for (int i = 1; i <= valor; i++) {
+//		      soma += i;
+//		    }
+//		    double media = (double) soma / valor;
+//		    return media;
+	  
+			//EXERCÍCIO 07 - Crie um programa que receba um valor de entrada inteiro ”n” maior que 0 e apresente a soma
+			//dos numeros ımpares entre 0 e n. 
+		
+//		Scanner leitor = new Scanner(System.in);
+//		System.out.println("Digite um valor inteiro maior que 0: ");
+		  
+//		int n = leitor.nextInt();
+//		   int soma = 0;
+//		   for(int i = 1; i <= n; i += 2) {
+//		       soma += i;
+//		   }
+//		   System.out.println("A soma dos números ímpares entre 0 e " + n + " é: " + soma);
+		
+			//EXERCÍCIO 08 - Crie um programa que receba um valor de entrada ”n”e imprima um triangulo feito com asteriscos. 
+			
+//        Scanner leitor = new Scanner(System.in);
+//        System.out.print("Digite um valor para n: ");
+//        int n = leitor.nextInt();
+        
+//       for (int i = 1; i <= n; i++) {
+//            for (int j = 1; j <= i; j++) {
+//                System.out.print("*");
+//           }
+//           System.out.println();
+//        	}
+		
+			//EXERCÍCIO 09 - Escreva um programa que receba como entrada um valor inteiro maior que zero e apresente como
+			//saıda a sequencia decrescente que inicia com o numero inserido e termina no zero. Entrada: Valor inteiro maior que zero.
+			//Saıda: Sequencia decrescente ate o valor zero.
+		
+//		Scanner leitor = new Scanner(System.in);
+//		System.out.println("Digite um valor inteiro maior que 0: ");
+//		int valor = leitor.nextInt();
+		
+//		for (int i = 0; i <= valor; i++) {
+//			System.out.println(valor - i);
+//		}
+	    
+	    	//EXERCÍCIO 10 - Escreva um programa que le 15 valores reais, encontra o maior e o menor deles e mostre esses
+			//valores na tela.
+	    
+//        Scanner teclado = new Scanner(System.in);
+        
+//        double maior = Double.NEGATIVE_INFINITY;
+//        double menor = Double.POSITIVE_INFINITY;
+        
+//        for (int i = 1; i <= 15; i++) {
+//            System.out.print("Digite o valor " + i + ": ");
+//            double valor = teclado.nextDouble();
+            
+//            if (valor > maior) {
+//                maior = valor;
+//            }
+            
+//            if (valor < menor) {
+//                menor = valor;
+//            }
+//        }
+        
+//        System.out.println("O maior valor digitado foi: " + maior);
+//        System.out.println("O menor valor digitado foi: " + menor);
+        
+//        teclado.close();
+		
+//------------------------------------------------------------------------------------------------------------------
+		
+			//LISTA ARRAY
+			//EXERCÍCIO 01: Crie um array com os seguintes valores doubles {1.3, 1.4, -5.7, 8.9}. Percorra esse array utilizando for tradicional e o comando for each.		
+
+	//		double[] num = {1.3, 1.4, -5.7, 8.9};
+
+	//		for( double n: num ) {
+	//			System.out.println(n);
+	//			}
+
+	//		for(int i = 0; i < num.length; i++) {
+	//			System.out.println(num[i]);
+
+	//		}
+
+
+				//EXERCÍCIO 02: Peça 10 valores inteiros para usuário, armazene-os em um array e imprima-os na tela.
+
+	//		Scanner s = new Scanner(System.in);
+	//		int[] a = new int [10];
+	//		for (int i = 0; i < a.length; i++) {
+	//			System.out.println("Digite o valor da posição " + i + ": ");
+	//		a[i] = s.nextInt();
+
+	//		}
+
+	//		for (int i = 0; i < a.length; i++) {
+	//			System.out.println("O valor de a na posição " + i + " é: " + a[i]);
+	//		}
+
+				//EXERCÍCIO 03: Peça 10 números inteiros para o usuário e imprima: a quantidade de números positivos, a quantidade de números negativos, a 
+				//quantidade de zeros, a quantidade de números pares e a quantidade de números ímpares.
+
+
+	//		Scanner scanner = new Scanner(System.in);
+	//		int[] numeros = new int[10];
+	//		int positivos = 0;
+	//		int negativos = 0;
+	//		int zeros = 0;
+	//		int pares = 0;
+	//		int impares = 0;
+
+	//		for (int i = 0; i < numeros.length; i++) {
+	//			System.out.println("Digite um número inteiro: ");
+	//			numeros[i] = scanner.nextInt();
+
+	//			if (numeros[i] > 0) {
+	//				positivos++;
+	//			}
+	//			else if (numeros[i] < 0) {
+	//				negativos++;
+	//			}
+	//			else {
+	//				zeros++;
+	//			}
+	//			if (numeros [i] %2 == 0) {
+	//				pares++;
+	//			}
+	//			else {
+	//				impares++;
+	//			}
+
+	//			 System.out.println("Quantidade de números positivos: " + positivos);
+	//			 System.out.println("Quantidade de números negativos: " + negativos);
+	//			 System.out.println("Quantidade de zeros: " + zeros);
+	//			 System.out.println("Quantidade de pares: " + pares);
+	//			 System.out.println("Quantidade de ímpares: " + impares);
+	//		}
+
+				//EXERCÍCIO 04: Crie um código utilizando array que peça o nome, idade e a quantidade de filhos para um grupo de cinco pessoas e em seguida 
+				//imprima as informações na tela. O código deve conter um array para armazenar cada uma das informações: nome, idade e quantidade de filhos.
+
+	//		Scanner scanner = new Scanner(System.in);
+	//		String[] nomes = new String[5];
+	//		int[] idades = new int[5];
+	//		int[]filhos = new int [5];
+
+	//		for (int i = 0; i < nomes.length; i++ ) {
+	//			System.out.println("Digite o nome " + (i+1) + ": " );
+	//			nomes[i] = scanner.nextLine();
+
+	//			System.out.println("Digite a idade " + (i+1) + ": ");
+	//			idades[i] = scanner.nextInt();
+
+	//			System.out.println("Quantidade de filhos " + (i+1) + ": ");
+	//			filhos [i] = scanner.nextInt();
+
+	//			scanner.nextLine(); 
+	//		}
+	
+	//		System.out.println("\nInformações: ");
+	//		for (int i = 0; i < nomes.length; i++) {
+	//			System.out.println("\nPessoa " + (i+1));
+	//			System.out.println("Nome: " + nomes[i]);
+	//			System.out.println("Idade: " + idades[i]);
+	//			System.out.println("Filhos: " + filhos[i]);
+	//		}
+	//			scanner.close();
+
+				//EXERCÍCIO 05: Escreva um programa em Java que solicite ao usuário a quantidade de nomes que deseja inserir em um array. Em seguida, o programa deve pedir
+				//que o usuário insira os nomes no array e exibir na tela os nomes inseridos. O programa deve encerrar após exibir os nomes.
+
+	//		Scanner scanner = new Scanner(System.in);
+	//		System.out.println("Quantos nomes deseja inserir?");
+	//		int qntNomes = scanner.nextInt();
+
+	//		String[] nomes = new String[qntNomes];
+
+	//		for (int i = 0; i < nomes.length; i++) {
+	//		System.out.println("Digite o nome " + (i+1) + ": ");
+	//		nomes[i] = scanner.next();
+	//		}
+
+	//		System.out.println("\nNomes inseridos: ");
+	//		for (String nome:nomes) {
+	//			System.out.println(nome);
+	//		}
+	//		scanner.close();
+
+				//EXERCÍCIO 06: Crie um programa utilizando array que peça ao usuário que digite 10 números inteiros. Em seguida, o código deve exibir a soma dos números pares
+				//digitados e a média dos números ímpares digitados.
+
+//				Scanner scanner = new Scanner(System.in);
+//				int[] numeros = new int [10];
+//				for (int i = 0; i < numeros.length; i++) {
+//					System.out.println("Digite o valor da posição " + i + ": ");
+//					numeros[i] = scanner.nextInt();
+//				}	
+
+//				double somaPares = 0;
+//				double impares = 0;
+//				double somaImpares = 0;
+//				double mediaImpares = 0;
+
+//				for (int i = 0; i < numeros.length; i++) {
+//					if (numeros[i] %2 == 0) {
+						
+//						somaPares = somaPares + numeros[i];
+						//somaPares += numeros[i]
+//					}
+//					else {
+						
+//						impares++;
+//						somaImpares = somaImpares + numeros[i];
+//					}
+//					if (impares > 0) {
+						
+//						mediaImpares = somaImpares/impares;
+//					}
+//				}
+
+//				System.out.println("Soma pares: " + somaPares);
+//				System.out.println("Média ímpares: " + mediaImpares);
+
+//				scanner.close();
+
+		
+				//EXERCÍCIO 07: Crie um programa que peça o primeiro nome, o cpf e o cpe de N pessoas. O número N pode ser determinado diretamente no programa ou pode ser
+				//também pedido para o usuário. Cada uma dessas informações deve ser armazenada em um array do tipo String. Se o cpf e o cep contiverem '.' ou '-'
+				//deve-se excluí-los. Por fim, deve mostrar as informações recebidas na tela. Utilize a função replaceAll para fazer a remoção dos caracteres indesejados,
+				//abaixo um exemplo ilustrativo do uso dessa função. String cpf = "123.456.789-10"; String cpfSemPontuacao = cpf.replaceAll("[.-]", ""); 
+				//System.out.println(cpfSemPontuacao); // "12345678910
+
+//				Scanner scanner = new Scanner(System.in);
+//				System.out.print("Digite o número de pessoas: ");
+				
+//				int n = scanner.nextInt();
+				
+//				String[] nomes = new String[n];
+//				String[] cpfs = new String[n];
+//				String[] ceps = new String[n];
+				
+//				for (int i = 0; i < n; i++) {
+				
+//				System.out.print("Digite o primeiro nome da pessoa " + (i + 1) + ": ");
+//				nomes[i] = scanner.next();
+				
+//				System.out.print("Digite o CPF da pessoa " + (i + 1) + ": ");
+//				cpfs[i] = scanner.next().replaceAll("[.-]", "");
+				
+//				System.out.print("Digite o CEP da pessoa " + (i + 1) + ": ");
+//				ceps[i] = scanner.next().replaceAll("[.-]", "");
+//				}
+								
+//				System.out.println("\nPessoas cadastradas:");
+				
+//				for (int i = 0; i < n; i++) {
+				
+//				System.out.println("Nome: " + nomes[i]);
+//				System.out.println("CPF: " + cpfs[i]);
+//				System.out.println("CEP: " + ceps[i]);						
+//				}
+
+//-------------------------------------------------------------------------------------------------------------------------		
+		
+				//EXERCÍCIOS REVISÃO PROVA!
+		
+			//01 - Faça um programa que peça o nome e a altura de uma pessoa e verifique se ela é alta ou baixa. Considere que uma pessoa 
+			//é considerada alta se sua altura for igual ou superior a 1,70m. Imprima na tela uma mensagem indicando se a pessoa é alta
+			//ou baixa.
+
+//		Scanner leitor = new Scanner(System.in);
+//		System.out.print("Digite o nome da pessoa: ");
+//		String nome = leitor.nextLine();
+//		System.out.print("Digite a altura da pessoa em metros: ");
+//		double altura = leitor.nextDouble();
+//		if (altura >= 1.70) {
+//		System.out.println(nome + " é uma pessoa alta.");
+//		} else {
+//		System.out.println(nome + " é uma pessoa baixa.");
+//		}
+//		leitor.close();
+
+			//02 - Peça para o usuário os valores de comprimento e largura de um retângulo e verifique se ele é quadrado ou não.
+		
+//		Scanner leitor = new Scanner(System.in);
+//		System.out.print("Digite o valor do comprimento: ");
+//		double comprimento = leitor.nextDouble();
+//		System.out.print("Digite o valor da largura: ");
+//		double largura = leitor.nextDouble();
+//		if (comprimento == largura) {
+//		System.out.println("O retângulo é um quadrado.");
+//		} else {
+//		System.out.println("O retângulo não é um quadrado.");
+//		}
+		
+			//03 - Peça para o usuário digitar um número entre 1 e 7 e imprima o dia da semana correspondente a este número: 1 - Domingo, 
+			//2 - Segunda-feira, 3 - Terça-feira, 4 - Quarta-feira, 5 - Quinta-feira, 6 -Sexta-feira, 7 - Sábado. 
+			//Imprima uma mensagem dizendo “número inválido”, caso o usuário digite um valor fora desta faixa.
+		
+//		Scanner leitor = new Scanner(System.in);
+//		System.out.print("Digite um número entre 1 e 7: ");
+//		int num = leitor.nextInt();
+//		switch (num) {
+//		case 1:
+//		System.out.println("Domingo");
+//		break;
+//		case 2:
+//		System.out.println("Segunda-feira");
+//		break;
+//		case 3:
+//		System.out.println("Terça-feira");
+//		break;
+//		case 4:
+//		System.out.println("Quarta-feira");
+//		break;
+//		case 5:
+//		System.out.println("Quinta-feira");
+//		break;
+//		case 6:
+//		System.out.println("Sexta-feira");
+//		break;
+//		case 7:
+//		System.out.println("Sábado");
+//		break;
+//		default:
+//		System.out.println("Número inválido");
+//		break;
+//		}
+//		leitor.close();
+		
+			//04 - Uma empresa decidiu dar um bônus de 5% ao funcionário se o seu tempo de serviço for superior a 5 anos. 
+			//Peça ao usuário seu salário e o tempo de serviço e imprima o valor do bônus.
+		
+//		Scanner scanner = new Scanner(System.in);
+//		System.out.print("Digite o seu salário: ");
+//		double salario = scanner.nextDouble();
+//		System.out.print("Digite o tempo de serviço (em anos): ");
+//		int tempoServico = scanner.nextInt();
+//		if (tempoServico > 5) {
+//		double bonus = salario * 0.05;
+//		System.out.printf("Bônus de R$ %.2f%n", bonus);
+//		} else {
+//		System.out.println("Você não é elegível para receber um bônus.");
+//		}
+//		scanner.close();
+		
+			//05 - Peça a idade de duas pessoas e diga quem é a mais velha e quem é a mais nova
+		
+//		Scanner leitor = new Scanner(System.in);
+//		System.out.print("Digite a idade da primeira pessoa: ");
+//		int idade1 = leitor.nextInt();
+//		System.out.print("Digite a idade da segunda pessoa: ");
+//		int idade2 = leitor.nextInt();
+//		if (idade1 > idade2) {
+//		System.out.println("A primeira pessoa é mais velha.");
+//		System.out.println("A segunda pessoa é mais nova.");
+//		} else if (idade2 > idade1) {
+//		System.out.println("A segunda pessoa é mais velha.");
+//		System.out.println("A primeira pessoa é mais nova.");
+//		} else {
+//		System.out.println("As duas pessoas têm a mesma idade.");
+//		}
+//		leitor.close();
+		
+			//06 - Crie um programa que peça ao usuário inserir o ano inicial, o ano final e um espaçamento, em seguida, apresenta 
+			//os anos dentro da faixa segundo o dado espaçamento. Considere que o usuário irá inserir valores válidos para cada uma 
+			//das variáveis do problema.
+ 
+//		Scanner sc = new Scanner(System.in);
+//		System.out.print("Digite o ano inicial: ");
+//		int anoInicial = sc.nextInt();
+//		System.out.print("Digite o ano final: ");
+//		int anoFinal = sc.nextInt();
+//		System.out.print("Digite o espaçamento entre os anos: ");
+//		int espacamento = sc.nextInt();
+//		System.out.println("Anos entre " + anoInicial + " e " +
+//		anoFinal + " com espaçamento de " + espacamento + ":");
+//		for (int i = anoInicial; i <= anoFinal; i += espacamento) {
+//		System.out.println(i);
+//		}
+//		sc.close();
+		
+			//07 - Faça um menu utilizando uma estrutura ‘for’ para cadastrar ‘n’ pessoas. As informações do cadastro são nome e idade.
+			//Para n = 1, o programa terá a seguinte saída: Nome 1: Idade da pessoa 1: 
+			//Para n = 2, o programa terá a seguinte saída: Nome 1: Idade da pessoa 1:||Nome 2: Idade da pessoa 2:
+		
+//		Scanner scanner = new Scanner(System.in);
+//		System.out.print("Quantidade de pessoas a serem cadastradas: ");
+//		int n = scanner.nextInt();
+//		for (int i = 1; i <= n; i++) {
+//		System.out.println("Nome " + i + ":");
+//		String nome = scanner.next();
+//		System.out.println("Idade da pessoa " + i + ":");
+//		int idade = scanner.nextInt();
+//		System.out.println("- - - - - - - - - - - - - - -");
+//		}
+//		scanner.close();
+
+			//08 - Faça um programa que apresenta um menu de operações matemáticas, com os seguintes itens: '+' para soma e 
+			//'-' para subtração, 'n' para sair. Utilize while ou do/while na questão. Para pegar um único caracter utilizando Scanner
+			//você pode utilizar a seguinte linha de código: opcao = input.next().charAt(0);
+		
+//		Scanner input = new Scanner(System.in);
+//		char opcao;
+//		do {
+//		System.out.println("Menu de operações matemáticas:");
+//		System.out.println("+ - soma");
+//		System.out.println("- - subtração");
+//		System.out.println("n - sair");
+//		System.out.print("Escolha uma opção: ");
+//		opcao = input.next().charAt(0);
+//		switch(opcao) {
+//		case '+':
+//		case '-':
+//		System.out.println("Implementar operação...");
+//		break;
+//		case 'n':
+//		System.out.println("Saindo...");
+//		break;
+//		default:
+//		System.out.println("Opção inválida!");
+//		break;
+//		}
+//		} while (opcao != 'n');
+//		input.close();
+		
+			//09 - Crie um array de inteiros com 5 elementos e preencha com valores informados pelo usuário:
+
+//		Scanner input = new Scanner(System.in);
+//		int[] arr = new int[5];
+//		for (int i = 0; i < arr.length; i++) {
+//		System.out.print("Informe um valor para a posição " + i + ":");
+//		arr[i] = input.nextInt();
+//		}
+//		System.out.println("Array preenchido: ");
+//		for (int i = 0; i < arr.length; i++) {
+//		System.out.print(arr[i] + " ");
+//		}
+
+			//10 - Crie um array de strings com 3 nomes de cores e imprima na tela o primeiro e o último elementos do array:
+		
+//		String[] cores = {"vermelho", "azul", "verde"};
+//		System.out.println("Primeiro elemento: " + cores[0]);
+//		System.out.println("Último elemento: " + cores[cores.length - 1]);
+		
+			//11 - Crie um programa que declare um array de strings com tamanho 3 e preencha cada posição com o nome de uma fruta. 
+			//Em seguida, apresente na tela as frutas armazenadas no array em ordem alfabética.
+			//Utilize Arrays.sort(); para organizar o nome das frutas.
+		
+//		String[] frutas = {"Banana", "Abacaxi", "Maçã"};
+//		Arrays.sort(frutas);
+//		for (String fruta : frutas) {
+//		System.out.println(fruta);
+//		}
+
+			//12 - Crie um programa que declare um array de caracteres com tamanho 5 e preencha cada posição com uma letra do 
+			//alfabeto. Em seguida, apresente na tela as letras armazenadas.
+		
+//		Scanner scanner = new Scanner(System.in);
+		// Declaração do array de caracteres
+//		String[] letras = new String[5];
+		// Preenchimento do array com as letras digitadas pelo usuário
+//		for (int i = 0; i < letras.length; i++) {
+//		System.out.print("Digite a " + (i+1) + "ª letra: ");
+//		letras[i] = scanner.next();
+//		}
+		// Impressão do array na tela
+//		System.out.println("As letras armazenadas no array são:");
+//		for (int i = 0; i < letras.length; i++) {
+//		System.out.print(letras[i] + " ");
+//		}
+		
+//-------------------------------------------------------------------------------------------------------------------------------
+		
+		
+		
+		
+		
+		
+		
+		
+	}
+	
+	
+}
+
+
+
+
