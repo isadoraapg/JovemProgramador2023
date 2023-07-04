@@ -1,0 +1,40 @@
+/* Exemplo de uso de funções matemáticas.
+ * 
+ */
+
+package aulas;
+
+//Pacote impotado para utilizarmos a classe 'Scanner'
+import java.util.Scanner;
+
+public class UsoDeOperacoesMatematicas {
+	public static void main(String[] args) {
+		double a = 4;
+		double b = 5;
+		double resultado;
+		
+		resultado = a + b;
+		System.out.println("O Resultado de " + a + " + " + b + " = " + resultado );
+		
+		
+		resultado = a - b;
+		System.out.println("O Resultado de " + a + " - " + b + " = " + resultado );
+		
+		// 
+		resultado = a * b;
+		System.out.println("O Resultado de " + a + " * " + b + " = " + resultado );
+		
+		// Divisão
+		resultado = a / b;
+		System.out.println("O Resultado de " + a + " / " + b + " = " + resultado );
+		
+		// Raiz quadrada
+		resultado = Math.sqrt(a);
+		System.out.println("O Resultado da raiz quadrada de " + a + " é " + resultado );
+		
+		// Potencia = valor 'a' elevado ao valor 2
+		resultado = Math.pow(a, 2);
+		System.out.println("O Resultado de " + a + " ^ " + 2 + " = " + resultado );
+		
+	}
+}
