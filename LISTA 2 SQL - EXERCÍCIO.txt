@@ -1,0 +1,153 @@
+
+
+
+
+create database biblioteca
+
+
+
+create table livros(
+id int primary key,
+titulo text,
+autor text,
+editora text,
+ano_publicacao int
+);
+
+
+
+
+
+
+create table clientes(
+id int primary key,
+nome text,
+cpf text,
+endereco text,
+telefone text
+);
+
+
+
+
+
+
+
+create table emprestimos(
+id int primary key,
+livro_id int,
+cliente_id int,
+data_emprestimo date,
+data_devolucao date
+);
+
+
+
+
+
+create table produtos(
+id int primary key,
+nome text,
+descricao text,
+preco decimal(5,2)
+);
+
+
+
+
+
+
+alter table produtos
+add column categoria varchar(20),
+add column estoque int,
+drop column descricao;
+
+
+
+alter table clientes
+add column email varchar(30),
+drop column telefone;
+
+
+
+
+
+create table vendas(
+id int primary key,
+produto_id int,
+quantidade int,
+data_venda date,
+valor_total decimal(5,2)
+);
+
+
+
+
+insert into livros
+(id, titulo, autor, editora,ano_publicacao)
+values
+('1', 'Dom Casmurro', 'Machado de Assis', 'Aguilar', '1960');
+
+
+
+
+
+insert into clientes 
+(id, nome, cpf, endereco, email)
+
+values
+('1', 'João da Silva', '123.456.789-10', 'Rua A, 123', 'joao.silva@email.com');
+
+
+
+
+insert into produtos 
+(id, nome, preco, categoria, estoque)
+
+values
+('1', 'Mouse sem fio', '50.00', 'eletronicos', '10');
+
+
+
+
+insert into vendas 
+(id, produto_id, quantidade, data_venda, valor_total)
+
+values
+('1', '1', '2', '2023-04-27', '100.00');
+
+
+
+
+insert into livros 
+(id, titulo, autor, editora, ano_publicacao)
+
+values
+('2', 'O Príncipe', 'Nicolau Maquiavel', 'Martin Claret', '2016'),
+('3', 'O Pequeno Príncipe', 'Antoine de Saint-Exupéry', 'Agir', '2015'),
+('4', 'O Grande Gatsby', 'F. Scott Fitzgerald', 'Penguin Classics', '2000'),
+('5', '1984', 'George Orwell', 'Companhia das Letras', '2009');
+
+
+
+
+insert into clientes 
+(id, nome, cpf, endereco, email)
+
+values
+('2', 'Maria da Silva', '111.222.333-44', 'Rua B, 456', 'maria.silva@email.com'),
+('3', 'José Pereira', '222.333.444-55', 'Av. C, 789', 'jose.pereira@email.com'),
+('4', 'Ana Rodrigues', '333.444.555-66', 'Rua D, 123', 'ana.rodrigues@email.com');
+
+
+
+
+
+insert into produtos 
+(id, nome, preco, categoria, estoque)
+
+values
+('2', 'Teclado mecânico', '150.00', 'eletronicos', '5'),
+('3', 'Fone de ouvido bluetooth', '80.00', 'eletronicos', '7'),
+('4', 'Caneta esferográfica', '2.50', 'papelaria', '20'),
+('5', 'Caderno universitário', '15.00', 'papelaria', '10');

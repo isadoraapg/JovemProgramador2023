@@ -1,0 +1,48 @@
+create database cadastro
+default character set utf8mb4
+default collate utf8mb4_general_ci;
+
+use cadastro;
+
+create table pessoas (
+id int primary key not null auto_increment,  //auto_increment - cria automático o incremento
+nome varchar(20) not null,   //not null - não nulo, campo deve ser preenchido obrigatoriamente
+nascimento date,
+sexo enum('M', 'F'),
+peso decimal(5,2),
+altura decimal(3,2),
+nacionalidade varchar(20) default 'Brasil'
+) default charset utf8;
+
+insert into pessoas
+(id, nome, nascimento, sexo, peso, altura, nacionalidade)
+values
+('1', 'Isadora', '1994-05-01', 'F', '66', '1.67', 'Brasil');
+
+insert into pessoas
+(id, nome, nascimento, sexo, peso, altura, nacionalidade)
+values
+(default, 'Isadora2', '1994-05-01', 'F', '66', '1.67', default),
+(default, 'Isadora3', '1994-05-01', 'F', '66', '1.67', default),
+(default, 'Isadora3', '1994-05-01', 'F', '66', '1.67', default);
+
+//inserir varias pessoas de uma vez só ^
+
+select*from pessoas;   //pra visualizar o que foi inserido
+
+
+-------------------------------------------------------------------
+
+
+
+
+create database alunos;
+
+
+create table (
+
+
+
+);
+
+

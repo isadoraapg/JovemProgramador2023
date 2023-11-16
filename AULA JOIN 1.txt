@@ -1,0 +1,87 @@
+AULA JOIN 1
+
+
+create database escola2;
+
+use escola2;
+
+create table professores(
+id int not null auto_increment,
+nome varchar(50),
+idade int,
+primary key (id)
+);
+
+insert into professores
+values
+(default, 'Roberto', 40),
+(default, 'Laura', 35),
+(default, 'José', 38),
+(default, 'Maria', 45),
+(default, 'Antônio', 50),
+(default, 'Geralda', 32),
+(default, 'Marcos', 45),
+(default, 'Otávio', 30);
+
+create table estudantes(
+id int not null auto_increment,
+nome varchar(50),
+idade int,
+profpreferido int not null,
+primary key (id),
+#chave estrangeira (se relaciona com outra tabela) 
+#coluna profpreferido é uma chave estrangeira
+#references - tabela de referencia que pegará a informação
+#(id) - coluna que estamos pegando a informação
+foreign key (profpreferido) references professores(id)
+);
+
+insert into estudantes
+values
+(default, 'Fernanda', 20, 1 ),
+(default, 'Maria', 19, 3),
+(default, 'Gabriel', 21, 3),
+(default, 'Antônio', 23, 3),
+(default, 'Marcos', 21, 5),
+(default, 'Sofia', 22, 6),
+(default, 'Laura', 18, 7),
+(default, 'Bruna', 20, 5);
+
+select * from estudantes;
+select * from professores;
+
+desc professores;
+desc estudantes;
+
+select nome, profpreferido from estudantes;
+select nome from professores;
+
+# Usando 'as' para colocar um rótulo ('label')
+#e.nome - indica q é nome do estudante
+#p.nome - indica q é nome do professor
+#aqui cria-se um rótulo para estudande (e) e professor (p)
+select e.nome, e.profpreferido from estudantes as e;
+select p.nome from professores as p;
+
+# Usando 'inner join' -- interseção entre colunas
+select e.nome, e.profpreferido, p.nome from estudantes as e inner join professores as p on p.id = e.profpreferido; 
+# parte mais importante
+
+# inner join = join
+# Professores que possuem um professor preferido
+select e.nome, e.profpreferido, p.nome from estudantes as e join professores as p on p.id = e.profpreferido; 
+# parte mais importante
+
+# outro uso do 'as'
+select e.nome as Aluno, p.nome as Profpref from estudantes as e join professores as p on p.id = e.profpreferido; 
+# parte mais importante
+
+# Usando 'left outer join'
+# Todos os alunos: os que têm e os que não têm professor preferido
+select e.nome as Aluno, p.nome as Profpref from estudantes as e left outer join professores as p on p.id = e.profpreferido; 
+# parte mais importante
+
+# Usando 'left outer join'
+# Todos as relações dos professores: mostre os professores que estão na tabela aluno e os que não estão
+select e.nome as Aluno, p.nome as Profpref from estudantes as e right outer join professores as p on p.id = e.profpreferido; 
+# parte mais importante

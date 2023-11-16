@@ -1,0 +1,62 @@
+create database senac;
+use senac;
+
+create table alunos (
+id int not null auto_increment primary key,
+nome varchar(50) not null,
+idade int not null,
+endereco varchar(100),
+email varchar(50) unique
+);
+
+INSERT INTO alunos (nome, idade, endereco, email) VALUES
+('Lucas Silva', 20, 'Rua A, nº 123', 'lucas.silva@email.com'),
+('Ana Maria', 25, 'Rua B, nº 456', 'ana.maria@email.com'),
+('João da Silva', 22, 'Rua C, nº 789', 'joao.silva@email.com'),
+('Maria Santos', 30, 'Rua D, nº 1011', 'maria.santos@email.com'),
+('Pedro Oliveira', 19, 'Rua E, nº 1213', 'pedro.oliveira@email.com'),
+('Carla Souza', 28, 'Rua F, nº 1415', 'carla.souza@email.com'),
+('Rafael Lima', 21, 'Rua G, nº 1617', 'rafael.lima@email.com'),
+('Gabriela Ferreira', 26, 'Rua H, nº 1819', 'gabriela.ferreira@email.com'),
+('Fernando Pereira', 24, 'Rua I, nº 2021', 'fernando.pereira@email.com'),
+('Mariana Almeida', 23, 'Rua J, nº 2223', 'mariana.almeida@email.com'),
+('Larissa Gomes', 27, 'Rua K, nº 2425', 'larissa.gomes@email.com'),
+('Rodrigo Castro', 20, 'Rua L, nº 2627', 'rodrigo.castro@email.com'),
+('Juliana Oliveira', 29, 'Rua M, nº 2829', 'juliana.oliveira@email.com'),
+('Luciana Santos', 21, 'Rua N, nº 3031', 'luciana.santos@email.com'),
+('Gustavo Lima', 25, 'Rua O, nº 3233', 'gustavo.lima@email.com'),
+('Amanda Ferreira', 22, 'Rua P, nº 3435', 'amanda.ferreira@email.com'),
+('Vinícius Pereira', 30, 'Rua Q, nº 3637', 'vinicius.pereira@email.com'),
+('Bianca Almeida', 19, 'Rua R, nº 3839', 'bianca.almeida@email.com'),
+('Luiz Gomes', 26, 'Rua S, nº 4041', 'luiz.gomes@email.com'),
+('Aline Castro', 23, 'Rua T, nº 4243', 'aline.castro@email.com'),
+('Leonardo Oliveira', 27, 'Rua U, nº 4445', 'leonardo.oliveira@email.com'),
+('Camila Santos', 24, 'Rua V, nº 4647', 'camila.santos@email.com'),
+('Ricardo Lima', 28, 'Rua W, nº 4849', 'ricardo.lima@email.com'),
+('Natália Ferreira', 25, 'Rua X, nº 5051', 'natalia.ferreira@email.com'),
+('Vitor Pereira', 22, 'Rua Y, nº 5253', 'vitor.pereira@email.com'),
+('Guilherme Gomes', 23, 'Rua A, nº 54791', 'isabela.almeida@email.com');
+
+
+
+
+SELECT * FROM ALUNOS;
+select * from alunos order by nome;
+select * from alunos order by nome desc;
+select * from alunos order by idade;
+select * from alunos order by idade desc;
+select nome, idade from alunos;
+select idade, nome from alunos order by nome;
+select idade, nome from alunos order by idade;
+select * from alunos where idade = 20 order by nome;
+select nome, email from alunos where idade = 25 order by nome;
+select nome, idade, endereco from alunos where idade > 30 order by nome;
+select nome, idade, email from alunos where endereco like '%Rua%' order by idade;
+select nome, idade, email from alunos where idade < 25 order by nome;
+select nome, idade, email from alunos where idade <= 25 order by nome;
+select nome, idade, email from alunos where idade > 30 order by nome;
+select nome, idade, email from alunos where idade >= 30 order by nome;
+select nome, idade from alunos where idade between 20 and 25;
+select nome, idade from alunos where idade in (20, 25, 30);
+select * from alunos where idade between 20 and 30;
+select * from alunos where idade < 20 or idade >30;

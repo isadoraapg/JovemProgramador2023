@@ -1,0 +1,57 @@
+Exercício alter table
+
+create database escola1;
+
+create table alunos(
+id_alunos int primary key not null auto_increment,
+nome varchar(50) not null,
+idade int not null,
+nota decimal(4,2) not null
+);
+
+create table professores(
+id_prof int primary key not null auto_increment,
+nome varchar(50) not null,
+diciplina varchar(50) not null,
+salario decimal(7,2) not null
+);
+
+insert into alunos (nome, idade, nota) values
+('João', '18', '8.5'),
+('Maria', '20', '9.0'),
+('Pedro', '19', '7.0');
+
+select * from alunos;
+
+alter table professores
+add disciplina varchar(50) not null after nome;
+
+alter table professores 
+drop diciplina;
+
+insert into professores (nome, disciplina, salario) values
+('Ana', 'Matemática', '4000.00'),
+('Carlos', 'Português', '3500.00');
+
+select * from professores;
+
+alter table alunos
+add column sexo varchar(10) not null after idade;
+
+update alunos
+set nota = '9.0'
+where nome = 'João';
+
+update professores
+set salario = '4500.00'
+where nome = 'Ana';
+
+delete from alunos
+where nome = 'Pedro';
+
+delete from professores
+where nome = 'Carlos';
+
+truncate alunos;
+
+truncate professores;
